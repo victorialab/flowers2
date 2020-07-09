@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+ * {margin:0;padding:0;font-weight:normal;font-size:100%;text-decoration:none;}
+
+ html {background-color:white;}
+
+ body {background-color:white;max-width:960px;width:100%;margin-left:auto;margin-right:auto;}
+
+ header {background-color:pink;color:green;}
+
+ nav ul {list-style-type:none;display:flex;flex-direction:row;justify-content:center;}
+
+ nav ul a {font-size:18px;font-family:Tahoma, Verdana, Segoe, sans-serif;color:white;display:block;padding:20px;transition:background-color .8s;}
+
+ nav ul a:hover {background-color:green;}
+
+ h1 {font-size:40px;padding:20px 0;font-family:Tahoma, Verdana, Segoe, sans-serif;text-align:center;font-weight:bold;}
+
+ h2 {font-size:30px;padding:20px 0;font-family:Tahoma, Verdana, Segoe, sans-serif;text-align:center;color:green;}
+
+ p {font-size:12px;padding:10px 0;font-family:Tahoma, Verdana, Segoe, sans-serif;text-align:center;color:green;}
+
+ header+div {background-color:gray;min-height:250px;background-image:url(../images/flower-bkg.jpg);background-position:center;background-size:cover;}
+
+ footer {text-align:center;background-color:pink;color:white;padding:10px;}
+
+ header img {margin:5px 0 0 0;}
+
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  padding:20px
+}
+
+ .col {display:flex;justify-content:center;}
+ .col div {flex:1;padding:20px}
