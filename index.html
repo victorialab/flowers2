@@ -5,9 +5,10 @@
 <title>Spring Flowers Bloom</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
 <link href="css/style.css" rel="stylesheet" >
+<link rel="stylesheet" href="css/print.css" media="print">
 </head>
 
-<body>
+<body onload="document.getElementById('greet').innerHTML = 'Hi there, '+ prompt('Who is viewing?')">
 
 <main>
 	<img src="images/logo.png" alt="logo">
@@ -30,20 +31,22 @@
 	</div>
 
 <section>
+	<span id="greet">
+	</span>
 
 	<h2>Springs Arrival</h2>
 
-<div>
+<div onmouseover="style.backgroundColor = 'green'" onmouseout="style.backgroundColor = 'inherit'">
 <img src="images/flower.jpg" alt="IMG1">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis facilis cupiditate tenetur consequuntur modi, inventore iusto recusandae aspernatur velit, vitae, quis illo, repellendus ab. Ut aliquid repudiandae quidem nisi vero eveniet fugiat exercitationem optio architecto delectus culpa, libero adipisci totam cum corrupti asperiores officiis mollitia quis pariatur minus cupiditate. Itaque enim eius unde esse optio, possimus molestias id quasi deserunt ab! Doloremque possimus, dolor, autem similique nisi earum nam odio quis ea accusantium enim. Fugit amet voluptatum consectetur, ex aliquam autem. Ex esse ipsa, distinctio nulla ullam nostrum repudiandae dolor laudantium cum aspernatur necessitatibus aliquam, repellat sed magnam aliquid quo!</p>
 	</div>
 
-	<div>
+	<div onclick="style.backgroundColor = 'pink'" onmouseout="style.backgroundColor = 'inherit'">
 <img src="images/flower2.jpg" alt="IMG2">
 		<p>Corporis dignissimos assumenda consequuntur hic rerum eligendi distinctio consectetur, aliquid eum. Doloremque, error porro labore delectus minima earum sunt voluptatibus, incidunt cupiditate velit vero nam eos harum est ea fuga nihil aliquid quos atque inventore maxime aliquam asperiores eveniet. Quia tenetur, ratione debitis et itaque laborum! At provident asperiores ipsam a voluptate, rem assumenda amet! Aut consequatur id consectetur voluptatibus cupiditate autem tempore, facilis explicabo! Ipsam beatae vel deleniti ipsa rerum architecto quisquam dolorum iste accusamus id voluptate suscipit laboriosam consequuntur adipisci mollitia provident, nihil ad veniam officiis ab! Hic explicabo tempora ad optio quaerat inventore, facilis quidem similique vitae!</p>
 	</div>
 
-	<div>
+	<div onmouseover="style.backgroundColor = 'green'" onmouseout="style.backgroundColor = 'inherit'">
 <img src="images/flower3.jpg" alt="IMG3">
 		<p>Sunt alias fuga cupiditate blanditiis illo molestiae illum laudantium reprehenderit culpa atque ipsa quia, nulla velit, mollitia qui consectetur recusandae maiores praesentium in eligendi et! Doloremque, iste at, perferendis odit dignissimos sunt soluta velit voluptatum quis temporibus debitis adipisci, quam distinctio minima similique ducimus fuga. Nostrum velit mollitia temporibus, animi, vitae rem provident nihil laboriosam blanditiis, incidunt tenetur maxime architecto officia neque! Voluptas sed non expedita distinctio, soluta provident. Neque molestias, quidem ipsam ut provident error odio sapiente, reprehenderit vel eius, vitae, velit consectetur? Illum eos, dolorem doloribus error enim ipsum minima temporibus labore accusamus, assumenda voluptatibus odit, repudiandae dolores?</p>
 	</div>
@@ -51,9 +54,23 @@
 </section>
 
 
+<button type="button" onclick="document.getElementById('modal').setAttribute('class','modal_on')">Learn more</button>
+
+
 	<footer>
 	<p>&copy;2020 Spring Flowers Bloom. All rights reserved.</p>
 	</footer>
+
+	<div id="modal" class="modal_off" onclick="setAttribute('class','modal_off')">
+
+		<div>
+			<h3>Flowers</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+	</div>
 
 </body>
 </html>

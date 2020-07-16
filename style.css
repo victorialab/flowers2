@@ -8,7 +8,13 @@
 
  html {background-color:white;}
 
- body {background-color:white;max-width:960px;width:100%;margin-left:auto;margin-right:auto;}
+ section {
+	max-width:1280px;
+	margin:0 auto;
+}
+
+ body {background-color:white;}
+
 
  header {
  	position:sticky;
@@ -27,7 +33,9 @@
 
  h2 {font-size:30px;padding:20px 0;font-family:Tahoma, Verdana, Segoe, sans-serif;text-align:center;color:green;}
 
- p {font-size:12px;padding:10px 0;font-family:Tahoma, Verdana, Segoe, sans-serif;text-align:center;color:green;}
+ p {
+ 	margin:20px 0;
+ }
 
  header+div {background-color:gray;min-height:250px;background-image:url(../images/flower-bkg.jpg);background-position:center;background-size:cover;}
 
@@ -35,11 +43,19 @@
 
  header img {margin:5px 0 0 0;}
 
- section {max-width:960px;width:90%;margin:0 auto;}
+ section:nth-child(4) {display:flex;flex-wrap:wrap;}
 
- section:nth-child(3) {display:flex;flex-wrap:wrap;}
+ section:nth-child(4) div {flex:1;padding:0 20px;}
 
- section:nth-child(3) div {flex:1;padding:0 20px;}
+ section:nth-child(4) h2 {width:100%;padding:25px 0;text-align:center;font-size:30px;}
 
  @media screen and (max-width:480px){nav ul {flex-direction:column;text-align:center;}}
- @media screen and (max-width:768px) {section:nth-child(3){flex-direction:column;}
+ @media screen and (max-width:768px) {section:nth-child(4){flex-direction:column;}
+
+ .modal_off {display:none;}
+
+ .modal_on {display:block;position:fixed;top:0;bottom:0;background-color:rgba(0,0,0,.8);padding:50px;}
+
+ .modal_on div {background-color:white;text-align:center;padding:25px;}
+
+ span {font-size:48px;padding:50px 0;display:block;}

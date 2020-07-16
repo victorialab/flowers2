@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* print css document */
+
+img {display:none;}
+main div {background-image:none;}
+section div {flex:1;}
+h1 {color:black;}
+h2 {color:black;}
+footer {background-color:transparent;color:black;}
